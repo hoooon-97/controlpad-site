@@ -235,6 +235,21 @@
       background: var(--overlay-bg-hover);
     }
 
+    .btn-disabled {
+      opacity: 0.55;
+      cursor: not-allowed;
+      pointer-events: none;
+    }
+
+    .download-grid {
+      display: flex;
+      gap: 12px;
+      justify-content: center;
+      flex-wrap: wrap;
+      animation: fadeInUp 0.8s ease 0.4s both;
+      margin-bottom: 12px;
+    }
+
     /* Theme toggle */
     .theme-toggle {
       position: fixed;
@@ -716,8 +731,12 @@
       <span class="badge">iOS 17+ / macOS 14+</span>
       <h1>iPhone을 Mac의<br><span>무선 컨트롤 패드</span>로</h1>
       <p>같은 Wi-Fi에서 QR 코드 하나로 연결. Stream Deck 스타일 앱 그리드와 터치패드를 iPhone에서.</p>
-      <div class="hero-buttons">
+      <div class="download-grid">
         <a href="#" class="btn btn-primary">App Store에서 다운로드</a>
+        <a href="#" class="btn btn-secondary btn-disabled" aria-disabled="true">macOS DMG — 출시 예정</a>
+        <a href="#" class="btn btn-secondary btn-disabled" aria-disabled="true">Windows (Installer) — 출시 예정</a>
+      </div>
+      <div class="hero-buttons">
         <a href="#features" class="btn btn-secondary">자세히 보기</a>
       </div>
     </div>
@@ -909,8 +928,12 @@
     <div class="container">
       <h2>지금 시작하세요</h2>
       <p>iPhone과 Mac만 있으면 바로 사용할 수 있어요.</p>
-      <div class="hero-buttons">
+      <div class="download-grid">
         <a href="#" class="btn btn-primary">App Store에서 다운로드</a>
+        <a href="#" class="btn btn-secondary btn-disabled" aria-disabled="true">macOS DMG — 출시 예정</a>
+        <a href="#" class="btn btn-secondary btn-disabled" aria-disabled="true">Windows (Installer) — 출시 예정</a>
+      </div>
+      <div class="hero-buttons">
         <a href="https://github.com/parksanghun/controlpadV2" class="btn btn-secondary">GitHub에서 보기</a>
       </div>
     </div>
